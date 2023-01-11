@@ -1,0 +1,12 @@
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\bin\Debug\net6.0\SimpleProjectManager.Module.deps.json
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\bin\Debug\net6.0\SimpleProjectManager.Module.dll
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\bin\Debug\net6.0\SimpleProjectManager.Module.pdb
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.csproj.AssemblyReference.cache
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.AssemblyInfoInputs.cache
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.AssemblyInfo.cs
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.csproj.CoreCompileInputs.cache
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.dll
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\refint\SimpleProjectManager.Module.dll
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\SimpleProjectManager.Module.pdb
+C:\Users\dawid\Desktop\simpleporject\SimpleProjectManager\SimpleProjectManager.Module\obj\Debug\net6.0\ref\SimpleProjectManager.Module.dll
