@@ -13,6 +13,8 @@ namespace SimpleProjectManager.Module.BusinessObjects.Klient
     {
         public Klient(Session session) : base(session) { }
 
+        
+
         // edycja pól
         string symbol;
         public string Symbol

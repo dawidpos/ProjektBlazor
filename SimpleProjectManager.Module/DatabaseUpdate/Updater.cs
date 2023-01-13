@@ -73,7 +73,7 @@ public class Updater : ModuleUpdater {
 
         if (ObjectSpace.CanInstantiate(typeof(Klient)))
         {
-            Klient klient = ObjectSpace.FirstOrDefault<Klient>(c => c.VatNumber == "2742742287");
+            Klient klient = ObjectSpace.FirstOrDefault<Klient>(c => c.VatNumber == "641445540");
             if (klient == null)
             {
             klient = ObjectSpace.CreateObject<Klient>();

@@ -451,6 +451,19 @@
           "lib/netstandard2.0/DevExtreme.AspNet.Data.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -1023,6 +1036,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -1926,10 +1952,39 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "WcfCoreMtomEncoder/0.1.16": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.7",
+          "System.ServiceModel.Primitives": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/WcfCoreMtomEncoder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WcfCoreMtomEncoder.dll": {}
+        }
+      },
+      "BIRService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.ServiceModel.Http": "4.9.0",
+          "System.ServiceModel.Primitives": "4.9.0",
+          "WcfCoreMtomEncoder": "0.1.16"
+        },
+        "compile": {
+          "bin/placeholder/BIRService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BIRService.dll": {}
+        }
+      },
       "SimpleProjectManager.Module/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BIRService": "1.0.0",
           "DevExpress.ExpressApp": "22.2.3",
           "DevExpress.ExpressApp.CodeAnalysis": "22.2.3",
           "DevExpress.ExpressApp.Xpo": "22.2.3",
@@ -2448,6 +2503,23 @@
         "lib/net452/DevExtreme.AspNet.Data.xml",
         "lib/netstandard2.0/DevExtreme.AspNet.Data.dll",
         "lib/netstandard2.0/DevExtreme.AspNet.Data.xml"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
+      "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authorization/6.0.0": {
@@ -3420,6 +3492,21 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "Newtonsoft.Json.Bson/1.0.1": {
+      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "type": "package",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Newtonsoft.Json.Bson.dll",
+        "lib/net45/Newtonsoft.Json.Bson.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.Bson.xml",
+        "newtonsoft.json.bson.1.0.1.nupkg.sha512",
+        "newtonsoft.json.bson.nuspec"
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
@@ -6074,6 +6161,23 @@
         "version.txt"
       ]
     },
+    "WcfCoreMtomEncoder/0.1.16": {
+      "sha512": "0MbWGYAD2ShTM2qlwnbR8HyiJ4tYUwaZcZUm480Blmz5QTgWBJaOKjAOiKe2dsH8m/MBYxrxjtRTWaguAPNFQg==",
+      "type": "package",
+      "path": "wcfcoremtomencoder/0.1.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/WcfCoreMtomEncoder.dll",
+        "wcfcoremtomencoder.0.1.16.nupkg.sha512",
+        "wcfcoremtomencoder.nuspec"
+      ]
+    },
+    "BIRService/1.0.0": {
+      "type": "project",
+      "path": "../RegonServiceNetStandard-master/BIRService/BIRService.csproj",
+      "msbuildProject": "../RegonServiceNetStandard-master/BIRService/BIRService.csproj"
+    },
     "SimpleProjectManager.Module/1.0.0": {
       "type": "project",
       "path": "../SimpleProjectManager.Module/SimpleProjectManager.Module.csproj",
@@ -6095,11 +6199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dawid\\Desktop\\simpleporject\\SimpleProjectManager\\SimpleProjectManager.Blazor.Server\\SimpleProjectManager.Blazor.Server.csproj",
+      "projectUniqueName": "C:\\Users\\dawid\\Desktop\\simpleproject\\ProjektRekrutacyjny\\SimpleProjectManager.Blazor.Server\\SimpleProjectManager.Blazor.Server.csproj",
       "projectName": "SimpleProjectManager.Blazor.Server",
-      "projectPath": "C:\\Users\\dawid\\Desktop\\simpleporject\\SimpleProjectManager\\SimpleProjectManager.Blazor.Server\\SimpleProjectManager.Blazor.Server.csproj",
+      "projectPath": "C:\\Users\\dawid\\Desktop\\simpleproject\\ProjektRekrutacyjny\\SimpleProjectManager.Blazor.Server\\SimpleProjectManager.Blazor.Server.csproj",
       "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dawid\\Desktop\\simpleporject\\SimpleProjectManager\\SimpleProjectManager.Blazor.Server\\obj\\",
+      "outputPath": "C:\\Users\\dawid\\Desktop\\simpleproject\\ProjektRekrutacyjny\\SimpleProjectManager.Blazor.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
@@ -6123,8 +6227,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\dawid\\Desktop\\simpleporject\\SimpleProjectManager\\SimpleProjectManager.Module\\SimpleProjectManager.Module.csproj": {
-              "projectPath": "C:\\Users\\dawid\\Desktop\\simpleporject\\SimpleProjectManager\\SimpleProjectManager.Module\\SimpleProjectManager.Module.csproj"
+            "C:\\Users\\dawid\\Desktop\\simpleproject\\ProjektRekrutacyjny\\SimpleProjectManager.Module\\SimpleProjectManager.Module.csproj": {
+              "projectPath": "C:\\Users\\dawid\\Desktop\\simpleproject\\ProjektRekrutacyjny\\SimpleProjectManager.Module\\SimpleProjectManager.Module.csproj"
             }
           }
         }
